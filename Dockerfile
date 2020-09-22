@@ -1,4 +1,4 @@
-FROM node:12.16.4
+FROM node:12.16.3-alpine
 
 ENV ENV_SILENT=true
 
@@ -16,4 +16,4 @@ USER node
 
 EXPOSE 3333
 
-CMD ["npm", "start"]
+CMD ["yarn", "start"]
